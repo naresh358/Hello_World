@@ -3,7 +3,7 @@ name: Print Message Workflow
 on:
   push:
     branches:
-      - main
+      - naresh358-patch-1
 
 jobs:
   print-message:
