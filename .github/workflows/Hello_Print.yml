@@ -1,0 +1,13 @@
+name: Print Message Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a welcome message
+        run: echo "Hello from GitHub Actions!"
