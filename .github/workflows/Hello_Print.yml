@@ -1,13 +1,7 @@
-name: Print Message Workflow
-
 on:
-  push:
-    branches:
-      - main
-
-jobs:
-  print-message:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print a welcome message
-        run: echo "Hello from GitHub Actions!"
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Your name'
+        required: true
+        default: 'World'
